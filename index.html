@@ -1,29 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta name="author" content="Robinson Ramirez">
+    <meta name="description" content="Pagina web para agencia de viajes">
     <link rel="stylesheet" href="css/style.css">
-    <title>Travel</title>
+    <link rel="stylesheet" href="css/style2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/80edc5472c.js" crossorigin="anonymous"></script>
+    <link href="images/avion.ico" rel="icon">
+    <title>Travel Agencia de viajes</title>
 </head>
 <body>
     <header>
         <div class="cabecera">
-            <div class="navegacion">
+            <div class="navegacion" id="lista">
                 <nav class="lista">
-                    <li class="logo">
-                        <img class="logoimagen" src="images/2021079.svg" alt="incono"><a class="link" href="#">TRAVEL</a>
-                    </li>
-                    <li class="nave"><a href="#" class="links">INICIO</a></li>
-                    <li class="nave"><a href="#" class="links">PRECIOS ESPECIALES</a></li>
-                    <li class="nave"><a href="#" class="links">TESTIMONIOS</a></li>
-                    <li class="nave"><a href="#" class="links">BLOG</a></li>
-                    <li class="nave"><a href="#" class="links">CONTACTANOS</a></li>
+                    <ul>
+                        <li class="logo">
+                            <img class="logoimagen" src="images/2021079.svg" alt="incono"><a class="link" href="#">TRAVEL</a>
+                        </li>
+                        <li class="nave"><a href="index.html" class="links">INICIO</a></li>
+                        <li class="nave"><a href="#preciosespeciales" class="links">PRECIOS ESPECIALES</a></li>
+                        <li class="nave"><a href="#testimonios" class="links">TESTIMONIOS</a></li>
+                        <li class="nave"><a href="#" class="links">BLOG</a></li>
+                        <li class="nave"><a href="#" class="links">CONTACTANOS</a></li>
+                    </ul>
                 </nav>
             </div>
             <div class="texto-1">
-                <p class="texto-inicio text-color">Elige el destino perfecto</p> 
+                <p class="texto-inicio text-color">Elige el destino perfecto</p>
                 <p></p>
            </div>
            <div class="texto-2">
@@ -32,5 +42,277 @@
            </div>
         </div>
     </header>
+
+    <div class="container" id="preciosespeciales">
+        <div class="container-texto">
+            <div class="texto-box">
+                <section class="texto-lugares">
+                    <h3>Destinos</h3>
+                    <h1>Escoge la acomodación perfecta</h1>
+                    <p >Distintos tipos de acomodación para distintos gustos.</p>
+                    <p >Habitaciones,apartamentos,cruceros y galmpings. </p>
+
+                    <h2 id="slider-texto1" class="pais">Japon</h2>
+
+                    <h2 id="slider-precio" class="precio">
+                        $10.000.000<button class="boton-reserva">Reserva ahora</button>
+                    </h2>
+                </section>
+            </div>
+        </div>
+
+        <div class="container-destinos">
+            <ul class="slider">
+                <li id="slider-1" class="links-1">
+                    <img src="images/japon.jpeg" alt="japon">
+                </li>
+                <li id="slider-2" class="links-1">
+                    <img src="images/lasvegas.jpeg" alt="lasvegas">
+                </li>
+                <li id="slider-3" class="links-1">
+                    <img src="images/paris.jpeg" alt="francia">
+                </li>
+                <li id="slider-4" class="links-1">
+                    <img src="images/grecia.jpeg" alt="grecia">
+                </li>
+            </ul>
+
+        </div>
+
+    </div>
+
+    <!-- barra de desplazamiento para el slider-->
+
+    <div class="container-sliders">
+        <ul class="menu">
+            <li class="links-1">
+                <a href="#slider-1"><i class="fas fa-circle-notch"></i></a>
+            </li>
+            <li class="links-1">
+                <a href="#slider-2"><i class="fas fa-circle-notch"></i></a>
+            </li>
+            <li class="links-1">
+                <a href="#slider-3"><i class="fas fa-circle-notch"></i></a>
+            </li >
+            <li class="links-1">
+                <a href="#slider-4"><i class="fas fa-circle-notch"></i></a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- contenedor con estadisticas de la pagina-->
+
+    <div class="logos-viajes">
+        <div class="logo-1">
+            <i class="fas fa-globe iconos"></i>
+            <h1 class="numeros">35+</h1>
+            <p class="destinos">Paises</p>
+
+        </div>
+
+        <div class="logo-2">
+            <i class="fas fa-compass iconos"></i>
+            <h1 class="numeros">1000+</h1>
+            <p class="destinos">Destinos</p>
+        </div>
+
+        <div class="logo-3">
+            <i class="fas fa-suitcase iconos"></i>
+            <h1 class="numeros">5000+</h1>
+            <p class="destinos">Viajeros</p>
+
+        </div>
+    </div>
+
+    <!-- Contenedor de los testimonios -->
+
+    <div class="container-testimonios">
+
+
+        <div class="navegacion2">
+            <div class="prev nav-btn"><i class="fas fa-arrow-alt-circle-left flecha"></i></div>
+            <div class="next nav-btn"><i class="fas fa-arrow-alt-circle-right flecha"></i></div>
+        </div>
+        <div class="testimonios main">
+
+            <div class="testi-images">
+
+                <img src="images/pexels-elle-hughes-1680172.jpeg" alt="turista hungaro">
+
+            </div>
+
+            <div class="testi-texto">
+
+                <span>TESTIMONIAL</span>
+
+                <article>
+                    <p>¡El mejor viaje de mi vida! Muy recomendado para sus viajes, excelentes hoteles
+                        y grandes planes turisticos.
+                    </p>
+
+                    <h4>Antonio Rose</h4>
+
+                </article>
+
+            </div>
+        </div>
+        <div class="testimonios">
+
+            <div class="testi-images">
+
+                <img src="https://images.pexels.com/photos/6626002/pexels-photo-6626002.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" alt="Pareja turista">
+
+            </div>
+
+            <div class="testi-texto">
+
+                <span>TESTIMONIAL</span>
+
+                <article>
+                    <p>El viaje muy bien organizado; los Riad en términos generales bien,
+                    el de Marrakech estupendo y pendientes de todos los detalles.</p>
+
+                    <h4>Carlos Valencia y Maria Cardona</h4>
+
+                </article>
+
+            </div>
+        </div>
+
+        <div class="testimonios">
+
+            <div class="testi-images">
+
+                <img src="https://images.pexels.com/photos/2080632/pexels-photo-2080632.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" alt="Paola Fernendez">
+
+            </div>
+
+            <div class="testi-texto">
+
+                <span>TESTIMONIAL</span>
+
+                <article>
+                    <p>Todo ha ido muy bien, pero con la idea de ser constructivos y
+                    mejorar como indicas si haría una mención con el hotel Citadines
+                    en Tokio.</p>
+
+                    <h4>Paola Valencia</h4>
+
+                </article>
+
+            </div>
+        </div>
+        <script src="js/main.js"></script>
+    </div>
+
+    <div class="noticias">
+        <br>
+        <h1>Noticias & Actualidad</h1>
+        <p>Viajes familiares, solitarios y en pareja.Encuentrate a ti mismo viajando y conociendo el mundo.</p>
+        <p>Tienes toda una vida por delante y un planeta entero por conocer</p>
+        <div class ="container-noticias">
+            <div class="item-1">
+                <h1>01</h1>
+                <section>
+                    <p class="titulo-noticias">Formas de conseguir descuentos al viajar</p>
+                    <p class="texto-noticias">Lagos es una pequeña ciudad de Portugal construida sobre una gran colina con vistas
+                        al océano Mediterráneo.
+                    </p>
+                    <h6 class="fin-noticias">5 hours ago</h6>
+                </section>
+            </div>
+            <div class="item-1">
+                <h1>02</h1>
+                <section>
+                    <p class="titulo-noticias">Formas de conseguir descuentos al viajar</p>
+                    <p class="texto-noticias">Lagos es una pequeña ciudad de Portugal construida sobre una gran colina con vistas
+                        al océano Mediterráneo.
+                    </p>
+                    <h6 class="fin-noticias">5 hours ago</h6>
+                </section>
+            </div>
+            <div class="item-1">
+                <h1>03</h1>
+                <section>
+                    <p class="titulo-noticias">Formas de conseguir descuentos al viajar</p>
+                    <p class="texto-noticias">Lagos es una pequeña ciudad de Portugal construida sobre una gran colina con vistas
+                        al océano Mediterráneo.
+                    </p>
+                    <h6 class="fin-noticias">5 hours ago</h6>
+                </section>
+            </div>
+            <div class="item-1">
+                <h1>04</h1>
+                <section>
+                    <p class="titulo-noticias">Formas de conseguir descuentos al viajar</p>
+                    <p class="texto-noticias">Lagos es una pequeña ciudad de Portugal construida sobre una gran colina con vistas
+                        al océano Mediterráneo.
+                    </p>
+                    <h6 class="fin-noticias">5 hours ago</h6>
+                </section>
+            </div>
+            <div class="item-1">
+                <h1>05</h1>
+                <section>
+                    <p class="titulo-noticias">Formas de conseguir descuentos al viajar</p>
+                    <p class="texto-noticias">Lagos es una pequeña ciudad de Portugal construida sobre una gran colina con vistas
+                        al océano Mediterráneo.
+                    </p>
+                    <h6 class="fin-noticias">5 hours ago</h6>
+                </section>
+            </div>
+            <div class="item-1">
+                <h1>06</h1>
+                <section>
+                    <p class="titulo-noticias">Formas de conseguir descuentos al viajar</p>
+                    <p class="texto-noticias">Lagos es una pequeña ciudad de Portugal construida sobre una gran colina con vistas
+                        al océano Mediterráneo.
+                    </p>
+                    <h6 class="fin-noticias">5 hours ago</h6>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-formulario">
+
+        <div class="texto-formulario">
+            <div class="titulo-contactos">
+                <h3> ¿NECESITAS AYUDA?</h3>
+            </div>
+            <div class="texto-contactos">
+                <h1>Contactanos</h1>
+                <p>No hay mejor compañia publicitaria que sea de bajo costo y también exitosa al mismo tiempo.
+                Las grandes ideas comerciales,cuando se utilizan de forma eficaz, pueden ahorrar mucho dinero.
+                </p>
+            </div>
+            <div class="formu-copyrigth">
+                <!-- <div class="logo-github">
+                    <i class="fab fa-github"></i>
+                </div> -->
+                <div class="text-copyrigth">
+                    <p>Developed by Robinson Ramirez</p>
+                    <p>Medellin,Colombia 2021</p>
+                </div>
+            </div>
+
+       </div>
+
+        <div class="formulario">
+           <div class="form-esqueleto">
+                <form class="formulario-estilo" id ="form" action="">
+                    <li class="formu-titulo"><h2> Envíanos Un Mensaje</h2></li>
+                    <label for="name">Nombre completo: </label>
+                    <li class="formu-input"><input id="name" type="text" name="name" required></li>
+                    <label for="email">Email: </label>
+                    <li class="formu-input"><input id="email" type="email" name="email" required></li>
+                    <label>Mensaje: </label>
+                    <li class="formu-input"><textarea id="message" name="mesagge" cols="30" required></textarea></li>
+                    <button type="submit" class="formu-boton" id="submit">Enviar</button>
+                </form>
+           </div>
+        </div>
+    </div>
+
 </body>
 </html>
